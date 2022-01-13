@@ -1,4 +1,3 @@
-import 'package:demo/screens/authentication.dart';
 import 'package:demo/screens/login.dart';
 import 'package:flutter/material.dart';
 
