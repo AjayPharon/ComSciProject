@@ -1,5 +1,6 @@
 import 'package:demo/screens/login.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,6 +30,14 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Study-Do'),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              icon: Icon(Icons.add))
+        ],
       ),
       body: Container(
           width: MediaQuery.of(context).size.width,
